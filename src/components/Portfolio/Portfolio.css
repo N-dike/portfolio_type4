@@ -1,0 +1,118 @@
+.portF-container {
+    width: 100%;
+    padding-bottom: 90px;
+}
+.portF-container > h1 {
+    color: var(--textColour);
+}
+.card-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    padding: 45px;
+    place-items: center;
+    row-gap: 45px;
+}
+.card-main {
+    border-radius: 10px;
+    box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.226);
+    width: 300px;
+    text-align: center;
+    background: var(--backgroundAlternate);
+}
+.IMG-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.card-IMG {
+    border-radius: 10px;
+    max-width: 90%;
+    margin-top: 3px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.card-main:hover {
+    animation: pulse 1s;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+.card-title {
+    color: var(--textColour);
+    text-align: center;
+    z-index: 10;
+    width: 100%;
+}
+.card-info {
+    color: var(--textColour);
+    padding: 0px 15px 0px 10px;
+    line-height: 24px;
+    font-family: 'Dosis';
+    font-weight: 700;
+}
+.read-more-less--more,
+.read-more-less--less {
+    color: var(--textAlternate);
+}
+h4 {
+    color: var(--textColour);
+    text-transform: uppercase;
+}
+
+.card-tech {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 10px;
+}
+
+.tech {
+    color: var(--textColour);
+    justify-content: center;
+    font-size: 16px;
+}
+
+.card-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 8px 0;
+    font-family: 'Nunito';
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.link {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 3px 2px;
+    color: var(--textAlternate);
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.link:hover {
+    /* text-shadow: 1px  0px 5px #6773fa; */
+    font-weight: 600;
+    transition: all 0.2s ease-out;
+}
+.link:active {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 960px) {
+    .portF-container {
+        margin-top: 150px;
+    }
+    .card-body {
+    }
+}
+@media only screen and (max-width: 480px) {
+    .card-body {
+        display: flex;
+        overflow-x: hidden;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

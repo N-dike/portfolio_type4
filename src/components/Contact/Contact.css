@@ -1,0 +1,113 @@
+.contact-container {
+    color: var(--textColour);
+    padding-bottom: 90px;
+}
+h1 {
+    font-family: 'Inter';
+    font-size: 53px;
+    text-align: center;
+    
+}
+h2 {
+    padding-left: 30px;
+    font-size: 30px;
+}
+.contact-form {
+    width: 50%;
+    margin-top: 20px;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+.half {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    clear: both;
+}
+#form-split {
+    width: 49%;
+    margin-left: 2%;
+    float: left;
+    clear: none;
+}
+#form-split:first-child {
+    margin-left: 0;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[type="text"],
+input[type="email"] {
+    background: var(--backgroundAlternate);;
+    width: 100%;
+    border: 0;
+    height: 50px;
+    font-size: 16px;
+    color: #070A26;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    background: var(--backgroundAlternate);;
+    height: 50px;
+    border: 0;
+    font-size: 16px;
+    color: #070A26;
+    padding: 20px;
+    min-height: 150px;
+    box-sizing: border-box;
+}
+.button {
+    color: var(--textColour);
+    font-weight: 700;
+    background-color: var(--navbarBackground);
+    font-family: 'Nunito';
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid var(--navbarBackground);
+    float: right;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.button:hover,
+.button:focus {
+    box-shadow: -2px 1px 3px rgba(80, 78, 78, 0.5);
+    transition: all 0.4s ease-in-out;
+    translate: scale(1.1);
+}
+.success-msg {
+    color: green;
+    font-size: 16px;
+}
+.error-msg {
+    color: red;
+    font-size: 16px;
+}
+@media only screen and (max-width: 960px) {
+    .contact-form {
+        width: 90%;
+        margin: auto;
+    }
+    h2 {
+        text-align: center;
+        padding: 0 50px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    .button {
+        width: 100%;
+        padding: 10px 10px;
+        margin: auto;
+    }
+}
