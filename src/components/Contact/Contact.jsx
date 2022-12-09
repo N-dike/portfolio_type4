@@ -38,8 +38,9 @@ const Contact = () => {
     <ShowComponent>
       <div className="contact-container" id="/contacts">
         <h1>Contact Me</h1>
-        <h2>Feel free to give me an email.</h2>
+        <div className="contact-seperator">
         <div className="contact-form">
+        <h2>Feel free to give me an email.</h2>
             <form ref={formRef} onSubmit={sendEmail}>
             <ul>
                 <li className="half" id="form-split">
@@ -71,7 +72,13 @@ const Contact = () => {
             </div>
             </form>
         </div>
-        <div className="info-map"></div>
+        <div className="info-map">
+          info map
+          <div className= "map-container">
+            
+          </div>
+        </div>
+        </div>
       </div>
     </ShowComponent>
   )
