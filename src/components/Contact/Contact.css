@@ -15,6 +15,7 @@ h2 {
 .contact-form {
     width: 50%;
     margin-top: 20px;
+    margin-right: 50px;
 }
 ul {
     padding: 0;
@@ -90,22 +91,12 @@ textarea {
     display: flex;
     justify-content: space-between;
 }
-.info-map {
-    background-color: var(--backgroundAlternate);
-    padding: 20px;
-    color: #fff;
-    font-size: 17px;
-    opacity: 0;
-    animation: fadeIn 1s 1.5s;
-    animation-fill-mode: forwards;
-    width: 20%;
-    margin-top: 50px;
-}
+
 .map-container {
     background: rgba(8, 253, 216, 0.1);
     float: right;
     width: 53%;
-    height: 100%;
+    height: 500px;
 }
 .success-msg {
     color: green;

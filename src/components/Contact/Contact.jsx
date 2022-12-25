@@ -2,6 +2,7 @@ import './Contact.css'
 import React, { useRef, useState } from 'react'
 import emailjs from 'emailjs-com'
 import { ShowComponent } from '../ShowComponent/ShowComponent'
+import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 
 const Contact = () => {
   const [contactSuccess, setContactSuccess] = useState("");
@@ -72,12 +73,18 @@ const Contact = () => {
             </div>
             </form>
         </div>
-        <div className="info-map">
-          info map
           <div className= "map-container">
-            
+            <MapContainer center={[51.505, -0.09]} zoom={13}>
+              <TileLayer
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+              <Marker position={[51.505, -0.09]}>
+                <Popup>
+                  A pretty CSS3 popup. <br /> Easily customizable.
+                </Popup>
+              </Marker>
+            </MapContainer>
           </div>
-        </div>
         </div>
       </div>
     </ShowComponent>

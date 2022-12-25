@@ -7,7 +7,7 @@ import Typed from 'react-typed'
 const Header = () => {
   const [letterClass, setLetterClass] = React.useState('text-animate')
   const nameArray = [' ', 'J', 'e', 'r', 'e', 'm', 'i', 'a', 'h']
-  const titleArray = [ ' ', 'f', 'r', 'o', 'n', 't', 'e', 'n', 'd', ' ', 'w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r']
+  const titleArray = [ ' ', 'f', 'r', 'o', 'n', 't', 'e', 'n', 'd', ' ', 'w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', ' ']
   return (
     <ShowComponent>
         <header className= "header-container">
